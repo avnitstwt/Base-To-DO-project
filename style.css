@@ -10,16 +10,20 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     color: white;
 }
-
+h1{
+    text-align: center;
+}
 .container{
     background-color: black;
     color: white;
     border: 1px solid white;
+    border-radius: 10PX;
     padding-left: 20px;
     padding-right: 20px;
+    padding-bottom: 10px;
     
 }
 
@@ -35,11 +39,12 @@ li{
         
 }
 li>button{
-    padding-left: 15px;
+    /* padding-left: 15px; */
+    padding: 10px;
     text-align: center;
 }
 button{
-    color: rgb(0, 0, 0);
+    color: rgb(15, 185, 46);
     /* text-align: left; */
-    background-color: rgb(174, 250, 172);
+    background-color: rgb(237, 27, 143);
 }
