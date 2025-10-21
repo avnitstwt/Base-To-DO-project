@@ -32,7 +32,7 @@ function renderTask(task){
     li.setAttribute('data-id',task.id)
     if(task.completed) li.classList.add('completed')
     li.innerHTML = `<span>${task.text}</span>
-    <button>delete</button>`
+    <button>Delete</button>`
     li.addEventListener('click',(e)=>{
 if(e.target.tagName==='BUTTON') return 
 task.completed = !task.completed

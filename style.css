@@ -40,11 +40,11 @@ li{
 }
 li>button{
     /* padding-left: 15px; */
-    padding: 10px;
+    padding: 5px;
     text-align: center;
 }
 button{
-    color: rgb(15, 185, 46);
+    color: rgb(255, 255, 255);
     /* text-align: left; */
-    background-color: rgb(237, 27, 143);
+    background-color: rgb(37, 19, 136);
 }
