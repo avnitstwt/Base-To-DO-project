@@ -10,19 +10,26 @@ tasks.forEach(task => { renderTask(task)
 
 addTaskButton.addEventListener('click',()=>{
     const taskText = todoInput.value.trim()
-    if(taskText === "")
-        return
+    if(taskText === ""){
 
-    const newTask = {
-        id:Date.now(),text: taskText,
-        completed:false
-
+        alert("Please enter something")
     }
-    tasks.push(newTask)
-    saveTasks()
-    renderTask(newTask)
-    todoInput.value=""
-    console.log(tasks);
+    
+
+        else{
+
+            const newTask = {
+                id:Date.now(),text: taskText,
+                completed:false
+            }
+            tasks.push(newTask)
+            saveTasks()
+            
+            
+            renderTask(newTask)
+            todoInput.value=""
+            console.log(tasks);
+        }
     
 })
 function renderTask(task){
