@@ -43,7 +43,9 @@ li{
         padding: 2px;
         
 }
-
+#Delete-task-btn{
+    background-color: rgb(16, 217, 167);
+}
 span{
     width: 10px;
 }
@@ -52,7 +54,7 @@ li>button{
     padding: 5px;
     text-align: center;
 }
-button{
+#add-task-btn,li>button{
     color: rgb(255, 255, 255);
     /* text-align: left; */
     background-color: rgb(37, 19, 136);
