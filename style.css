@@ -43,6 +43,10 @@ li{
         padding: 2px;
         
 }
+
+span{
+    width: 10px;
+}
 li>button{
     /* padding-left: 15px; */
     padding: 5px;
