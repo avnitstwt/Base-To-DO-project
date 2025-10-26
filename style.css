@@ -17,6 +17,11 @@ h1{
     text-align: center;
 }
 .container{
+        height: 100vh; 
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
     background-color: black;
     color: white;
     border: 1px solid white;
@@ -30,8 +35,15 @@ h1{
 li{
     width: 100%;
 }
+
 .input-container{
+    flex-shrink: 0;
+    display: flex;
     margin-bottom: 10px;
+
+    justify-content: center;
+    align-items: center; /* This centers them vertically in the row */
+    gap: 10px;
 }
 li{
     display: flex;
@@ -43,12 +55,21 @@ li{
         padding: 2px;
         
 }
+#todo-list{
+        flex-grow: 1;
+    overflow-y: auto;
+    
+    list-style: none;
+    padding: 0;
+
+}
+
 #Delete-task-btn{
     background-color: rgb(16, 217, 167);
 }
-span{
+/* span{
     width: 10px;
-}
+} */
 li>button{
     /* padding-left: 15px; */
     padding: 5px;
