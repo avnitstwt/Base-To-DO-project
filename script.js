@@ -17,6 +17,26 @@ deleteTask.addEventListener('click', () => {
     }
     
 });
+
+todoInput.addEventListener('keydown', (event) => {
+    const taskText = todoInput.value.trim()
+    if (event.key === 'Enter') {
+        // console.log("Hii")
+        const newTask = {
+            id:Date.now(),
+            text: taskText,
+            completed:false
+        }
+        tasks.push(newTask)
+        saveTasks()
+        
+        
+        renderTask(newTask)
+        todoInput.value=""
+        console.log(tasks);
+        }
+    });
+
 addTaskButton.addEventListener('click',()=>{
     const taskText = todoInput.value.trim()
     if(taskText === ""){
@@ -28,7 +48,8 @@ addTaskButton.addEventListener('click',()=>{
         else{
 
             const newTask = {
-                id:Date.now(),text: taskText,
+                id:Date.now(),
+                text: taskText,
                 completed:false
             }
             tasks.push(newTask)
