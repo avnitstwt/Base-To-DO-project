@@ -8,6 +8,24 @@ tasks.forEach(task => { renderTask(task)
     
 });
 
+todoInput.addEventListener('submit',()=>{
+
+    const taskText = todoInput.value.trim()
+    if(taskText === "")
+        return
+    
+    const newTask = {
+        id:Date.now(),text: taskText,
+        completed:false
+    
+    }
+    tasks.push(newTask)
+    saveTasks()
+    renderTask(newTask)
+    todoInput.value=""
+    console.log(tasks);
+})
+
 addTaskButton.addEventListener('click',()=>{
     const taskText = todoInput.value.trim()
     if(taskText === "")
