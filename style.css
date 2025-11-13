@@ -17,6 +17,11 @@ h1{
     text-align: right;
 }
 .container{
+        height: 100vh; 
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
     background-color: black;
     color: white;
     border: 1px solid white;
@@ -30,21 +35,48 @@ h1{
 li{
     width: 100%;
 }
+
+.input-container{
+    flex-shrink: 0;
+    display: flex;
+    margin-bottom: 10px;
+
+    justify-content: center;
+    align-items: center; /* This centers them vertically in the row */
+    gap: 10px;
+}
 li{
     display: flex;
-    /* flex-direction: column; */
-    justify-content: space-between;
-    /* align-items: safe; */
+    /* flex-direction: column;  */
+    justify-content: space-around;
+    align-items: center;
+    /* text-align: center; */
+
         padding: 2px;
         
 }
+#todo-list{
+        flex-grow: 1;
+    overflow-y: auto;
+    
+    list-style: none;
+    padding: 0;
+
+}
+
+#Delete-task-btn{
+    background-color: rgb(16, 217, 167);
+}
+/* span{
+    width: 10px;
+} */
 li>button{
     /* padding-left: 15px; */
-    padding: 10px;
+    padding: 5px;
     text-align: center;
 }
-button{
-    color: rgb(15, 185, 46);
+#add-task-btn,li>button{
+    color: rgb(255, 255, 255);
     /* text-align: left; */
-    background-color: rgb(237, 27, 143);
+    background-color: rgb(37, 19, 136);
 }
